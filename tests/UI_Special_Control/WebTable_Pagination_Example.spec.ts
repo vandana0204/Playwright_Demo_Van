@@ -1,6 +1,6 @@
 import { test, expect, Page } from '@playwright/test';
 
-test.describe('WebTable Pagination - Name and Salary Check', () => {
+test.describe('WebTable Pagination - Name and Salary Check @e2e @smoke', () => {
   // const tgtFName = 'Dixit';
   // const expSalary = '$163,500';
 

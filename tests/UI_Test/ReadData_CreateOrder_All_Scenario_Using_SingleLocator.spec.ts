@@ -2,7 +2,7 @@ import { test, expect, Page } from '@playwright/test';
 import { readFileSync } from 'fs';
 
 // Reads the JSON file and saves it  
-let objects = readFileSync('./tests/TestData/create_order_All_Scenario.json')
+let objects = readFileSync('./tests/TestData/Create_order_All_Scenario.json')
 const orders = JSON.parse(objects.toString());
 
 test.describe('E2E WebOrder Application', () => {
