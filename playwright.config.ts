@@ -1,3 +1,4 @@
+require('dotenv').config();
 import { defineConfig, devices } from '@playwright/test';
 
 /**
@@ -14,7 +15,11 @@ import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   //testDir: './tests',
   // testDir: './tests/UI_Test',
-   testDir: './tests/UI_Special_Control',
+   //testDir: './tests/UI_Special_Control',
+  //testDir: './tests/ZeroBank_Test_PageObject',
+  // Run tests from the root tests folder so all test subfolders are discovered
+  testDir: './tests/API_Test/Notes_API',
+   
   /* Run tests in files in parallel */
   fullyParallel: true,
   workers:1,
